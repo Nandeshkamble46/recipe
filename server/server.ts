@@ -9,7 +9,13 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+app.use(
+    cors({
+        origin: "https://recipe-two-steel.vercel.app/", // 🔥 your frontend URL
+        methods: ["GET", "POST", "PUT", "DELETE"],
+        credentials: true,
+    })
+);
 app.use(express.json());
 
 // ROUTES
