@@ -1,4 +1,4 @@
-import { Recipe } from "../types/Recipe";
+import type { Recipe } from "../types/Recipe";
 import API from "../services/api";
 
 const RecipeCard = ({
