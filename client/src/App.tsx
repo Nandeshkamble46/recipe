@@ -10,7 +10,7 @@ function App() {
   const [showForm, setShowForm] = useState(false);
 
   const fetchRecipes = async () => {
-    const res = await API.get("/recipes");
+    const res = await API.get("/api/recipes");
     setRecipes(res.data);
   };
 
