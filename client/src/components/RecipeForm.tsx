@@ -42,10 +42,10 @@ const RecipeForm = ({
             };
 
             if (editingRecipe) {
-                await API.put(`/recipes/${editingRecipe._id}`, data);
+                await API.put(`api/recipes/${editingRecipe._id}`, data);
                 alert("Recipe updated!");
             } else {
-                await API.post("/recipes", data);
+                await API.post("api/recipes", data);
                 alert("Recipe added!");
             }
 
